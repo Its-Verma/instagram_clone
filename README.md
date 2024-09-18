@@ -1,7 +1,7 @@
-<h1>Spotify Web Player Clone</h1>
-<p></p>A simple front-end clone of the Spotify web player designed using HTML and CSS. This project aims to replicate the user interface of the Spotify web player.</p>
+<h1>Instagram Web Clone</h1>
+<p></p>A simple front-end and back-end clone of the Instagram web application designed using Node.js. This project aims to replicate the user interface of the Instagram web application.</p>
 
-![Spotify Clone Screenshot](public/images/screenshot.png)
+![Instagram Web Application Clone Screenshot](public/images/screenshot.png)
 
 <h2>Features</h2>
 <ul>
