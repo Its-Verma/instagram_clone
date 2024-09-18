@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.add-post-button-container {
+    width: 50%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-post-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-post-button:hover {
+    background-color: #007bb5;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header, .post-footer {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-header {
+    justify-content: space-between;
+}
+
+.post-footer {
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.username {
+    font-weight: bold;
+    margin: 0;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+
+.like-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+.delete {
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-item.delete {
+    color: red;
+}
+
+.menu-button:focus + .dropdown-menu,
+.menu-button:hover + .dropdown-menu {
+    display: block;
+}
+

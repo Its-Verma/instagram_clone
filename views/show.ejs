@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Post</title>
+    <link rel="stylesheet" href="/css/view-post.css" />
+  </head>
+  <body>
+    <div class="container">
+      <% for(p of post) { %>
+      <!-- Post Header -->
+      <div class="post-header">
+        <div class="profile-info">
+          <img
+            class="profile-pic"
+            src="/<%=p.profile_pic %>"
+            alt="Profile Picture"
+          />
+          <p class="username"><%= p.username %></p>
+        </div>
+        <div class="header-actions">
+          <button class="like-button">❤️ Like</button>
+          <button class="back-button" onclick="window.history.back();">
+            🔙 Back
+          </button>
+        </div>
+      </div>
+
+      <!-- Post Image -->
+      <div class="post-image-container">
+        <img class="post-image" src="/<%= p.post_pic %>" alt="Post Image" />
+      </div>
+
+      <!-- Post Content -->
+      <div class="post-content">
+        <p><strong>user id: </strong> <%= p.id %></p>
+        <p><strong>username: </strong> <%= p.username %></p>
+        <p><strong>content: </strong> <%= p.content %></p>
+      </div>
+    </div>
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Post</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Add Post Button -->
+    <div class="add-post-button-container">
+      <a class="add-post-button" href="http://localhost:8080/instagram/new"
+        >➕ Add Post</a
+      >
+    </div>
+    <% for(post of posts) { %>
+
+    <div class="container">
+      <!-- Post Header -->
+      <div class="post-header">
+        <div class="profile-info">
+          <img
+            class="profile-pic"
+            src="<%= post.profile_pic %>"
+            alt="Profile Picture"
+          />
+          <p class="username"><%= post.username %></p>
+        </div>
+        <div class="header-actions">
+          <button class="like-button">❤️ Like</button>
+          <div class="menu-container">
+            <button class="menu-button">⋮</button>
+            <div class="dropdown-menu">
+              <a
+                href="http://localhost:8080/instagram/<%=post.id%>"
+                class="dropdown-item"
+                >View</a
+              >
+              <a
+                href="http://localhost:8080/instagram/<%=post.id%>/edit"
+                class="dropdown-item"
+                >Edit</a
+              >
+              <form
+                method="post"
+                action="/instagram/<%=post.id%>?_method=delete"
+              >
+                <button class="dropdown-item delete">Delete</button>
+              </form>
+              <!-- <a href="#" class="dropdown-item delete">Delete</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post Image -->
+      <img class="post-image" src="<%= post.post_pic %>" alt="Post Image" />
+
+      <!-- Post Content -->
+      <div class="post-content">
+        <p><strong><%= post.username %></strong> <%= post.content %></p>
+      </div>
+    </div>
+    <% } %>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

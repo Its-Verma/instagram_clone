@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="/css/add-post-styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add a New Post</h2>
+      <form action="/instagram" method="post" enctype="multipart/form-data">
+        <!-- Add Username -->
+        <div class="form-group">
+          <label for="username">Add Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username..."
+            required
+          />
+        </div>
+        <!-- Upload Post Image -->
+
+        <div class="form-group">
+          <label for="post_pic">Upload Post Image:</label>
+          <input
+            type="file"
+            id="post-image"
+            name="post_pic"
+            accept="image/*"
+            required
+          />
+        </div>
+        <!-- Upload Profile Image -->
+
+        <div class="form-group">
+          <label for="profile_pic">Upload Profile Picture:</label>
+          <input type="file" id="profile-image" name="profile_pic" required />
+        </div>
+
+        <!-- Post Caption -->
+        <div class="form-group">
+          <label for="content">Caption:</label>
+          <textarea
+            id="post-caption"
+            name="content"
+            rows="4"
+            placeholder="Write your caption here..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="submit-button">Post</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
