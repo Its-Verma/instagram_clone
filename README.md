@@ -1,15 +1,24 @@
-<h1>Spotify Web Player Clone</h1>
-<p></p>A simple front-end clone of the Spotify web player designed using HTML and CSS. This project aims to replicate the user interface of the Spotify web player.</p>
+<h1>Instagram Web Clone</h1>
+<p>This is a simple Instagram-like web application built with Node.js and MySQL. The app allows users to perform CRUD (Create, Read, Update, Delete) operations on posts. Users can add posts, edit them, view all posts, and delete posts, all while interacting with a MySQL database for persistent storage.</p>
 
-![Spotify Clone Screenshot](public/images/screenshot.png)
+![Instagram Web Application Clone Screenshot](public/images/screenshot.png)
 
 <h2>Features</h2>
 <ul>
   <li><b>Responsive Design:</b> Optimized for both desktop and mobile devices.</li>
-  <li><b>Navigation Bar:</b> Includes links to Home, Search, and Your Library.</li>
-  <li><b>Content Sections:</b> Features sections for playlists, albums, and more.</li>
-  <li><b>Footer Player:</b> Mimics Spotify's music player controls.
-</li>
+  <li>Create new posts with images and captions.</li>
+  <li>View all posts on a feed.</li>
+  <li>Edit existing posts.</li>
+  <li>Delete posts.</li>
+  <li>MySQL database used for data storage.</li>
+</ul>
+
+<h2>Technologies Used</h2>
+<ul>
+  <li><b>Backend :</b> Node.js (Express.js).</li>
+  <li><b>Frontend :</b> EJS (Embedded JavaScript) for templating.</li>
+  <li><b>Database :</b> MySQL.</li>
+  <li><b>API :</b> Used for fetching data and rendering posts dynamically.</li>
 </ul>
 
 <h2>Demo</h2>
@@ -20,32 +29,40 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/spotify-web-player-clone.git
-cd spotify-web-player-clone
+git clone https://github.com/Its-Verma/instagram_clone.git
+cd instagram-clone
+<h3>Configure MySQL database:</h3>
+<ul>
+  <li>Configure MySQL database:</li>
+  <li>Import the provided database.sql file to set up the database structure.</li>
+  <li>Update your database connection settings.</li>
+</ul>
+setup the database from sample sql file.
 Open the project:
-Simply open the index.html file in your preferred web browser to view the project.
+Nevigae he same repositry sart the server from terminal (command: nodemon index.js).
 
 <h2>Usage</h2>
-Navigation: Use the navigation bar to switch between different sections.
-Content Interaction: Explore the different playlists and albums displayed.
-Technologies Used
-HTML5: Markup language for structuring the web page.
-CSS3: Styling the web page to replicate Spotify's look and feel.
-Contributing
-Contributions are welcome! Please follow these steps to contribute:
+<ol>
+  <li><b>Adding a Post :</b> Navigate to the "Add New Post" page, upload an image, and add a caption.</li>
+  <li><b>Editing a Post:</b> Click on the "Edit" button on a post to update its details.</li>
+  <li><b>Deleting a Post:</b> Use the "Delete" button to remove a post from the feed.</li>
+  <li><b>Viewing Posts:</b> The main feed displays all user posts fetched from the database.</li>
+</ol>
 
 <h2>Fork the repository.</h2>
-Create a new branch (git checkout -b feature/your-feature-name).
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Open a Pull Request.
-Please make sure your code follows the project's coding standards.
+<ul>
+  <li>Create a new branch (git checkout -b feature/your-feature-name).</li>
+  <li>Commit your changes (git commit -m 'Add some feature').</li>
+  <li>Push to the branch (git push origin feature/your-feature-name).</li>
+  <li>Open a Pull Request.</li>
+  <li>Please make sure your code follows the project's coding standards.</li>
+</ul>
 
 <h2>License</h2>
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 <h2>Acknowledgements</h2>
-Spotify for the inspiration.
+Instagram for the inspiration.
 Font Awesome for icons used in the project.
 <h2>Contact</h2>
 If you have any questions, feel free to reach out:
