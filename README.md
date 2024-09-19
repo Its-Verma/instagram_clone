@@ -29,7 +29,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/spotify-web-player-clone.git
+git clone [https://github.com/yourusername/spotify-web-player-clone.git](https://github.com/Its-Verma/instagram_clone.git)
 cd instagram-clone
 <h3>Configure MySQL database:</h3>
 <ul>
